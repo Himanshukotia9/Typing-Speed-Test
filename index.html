@@ -6,7 +6,40 @@
     <title>Type-Racer</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="flex justify-center items-center font-serif px-3 min-h-screen bg-orange-500">
+    <div class="w-[800px] h-auto border border-black p-9 bg-white rounded-xl shadow-xl" id="wraper">
+        <input type="text" id="input-feild" placeholder="typehere" class="border border-black">
+        <div id="content-box" class="pt-3 px-5 rounded-xl border border-[#bfbfbf]">
+            <div id="typing-text">
+                <p>Peter Piper picked a peck of pickled peppers.
+                    A peck of pickled peppers Peter Piper picked.
+                    If Peter Piper picked a peck of pickled peppers,
+                    Where’s the peck of pickled peppers Peter Piper picked?</p>
+            </div>
+            <div id="content" class="mt-4 flex py-3 flex-wrap items-center justify-between border-t-2 border-[#bfbfbf]">
+                <ul id="result-details" class="flex items-center justify-between w-[calc(100%-140px)]">
+                    <li id="time-Left" class="flex items-center h-5">
+                        <p>Time left:</p>
+                        <span><b>60</b>s</span>
+                    </li>
+                    <li id="mistakes" class="flex items-center h-5">
+                        <p>Mistakes:</p>
+                        <span>0</span>
+                    </li>
+                    <li id="wpm" class="flex items-center h-5">
+                        <p>WPM:</p>
+                        <span>0</span>
+                    </li>
+                    <li id="cpm" class="flex items-center h-5">
+                        <p>CPM:</p>
+                        <span>0</span>
+                    </li>
+                </ul>
+                <button class="bg-orange-500 text-white py-2 px-4 text-base rounded-md">Try Again</button>
+            </div>
+
+        </div>
+    </div>
 
     <script src="/script.js"></script>
 </body>
