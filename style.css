@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#typing-text p span{
+    position: relative; 
+}
+#typing-text p span.active{
+     color: #f97316;
+}
+#typing-text p span.correct{
+    color: green;
+}
+#typing-text p span.incorrect{
+    color: red;
+    outline: 1px solid #ffffff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+::selection{
+    color: #ffffff;
+    background: #f97316;
+}
